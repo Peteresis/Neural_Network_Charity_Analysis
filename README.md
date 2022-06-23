@@ -40,7 +40,12 @@ Using Relu
 
 Settings Attempt #3
 
+![image](https://user-images.githubusercontent.com/98360572/175421073-c4babfed-4bbe-493d-906d-13bedabc77ad.png)
+
+
 Results Attempt #3
+
+![image](https://user-images.githubusercontent.com/98360572/175419659-14f26835-9ba3-4bcb-a3df-4dba13e54e75.png)
 
 
 
