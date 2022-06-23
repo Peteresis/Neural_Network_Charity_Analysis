@@ -4,10 +4,10 @@
  
  
 Settings Original Analysis 
- ![image](https://user-images.githubusercontent.com/98360572/175385608-4b2092de-6332-4b16-a073-c6da07b39f83.png)
+![image](https://user-images.githubusercontent.com/98360572/175398665-fadca32c-33b1-4e88-9597-ce42fd237d8c.png)
 
 Results original Analysis
-![image](https://user-images.githubusercontent.com/98360572/175385891-745cae57-bb47-4d9a-8440-4d98d3dc8597.png)
+![image](https://user-images.githubusercontent.com/98360572/175398768-7dcd341c-48d6-4ef0-af9d-17effa1e2b80.png)
 
 
 Settings Attempt #1
