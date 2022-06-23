@@ -48,6 +48,16 @@ Results Attempt #3
 ![image](https://user-images.githubusercontent.com/98360572/175419659-14f26835-9ba3-4bcb-a3df-4dba13e54e75.png)
 
 
+Using SIGMOID and Adding one extra neuron layer
+
+Settings Attempt #4
+
+![image](https://user-images.githubusercontent.com/98360572/175424350-6a8a93b7-790a-4f21-8406-1810fdd1739e.png)
+
+
+Results Attempt #4
+
+![image](https://user-images.githubusercontent.com/98360572/175424286-9b9110f8-b31a-489e-b54d-d0e8e3defe68.png)
 
 
 
