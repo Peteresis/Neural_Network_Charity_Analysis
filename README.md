@@ -60,7 +60,7 @@ Binning is a technique that accomplishes exactly what it sounds like. It will ta
 
 ### * How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
-A good rule of thumb for a basic neural network is to have two to three times the amount of neurons in the hidden layer as the number of inputs.  In the first run of the model had two hidden layers, the first layer had `80` neurons and the second layer had `30` neurons.  These parameters were changed in subsequent runs, but they will be explained later on.
+A good rule of thumb for a basic neural network is to have two to three times the amount of neurons in the hidden layer as the number of inputs.  In the first run, the model had two hidden layers, the first layer had `80` neurons and the second layer had `30` neurons.  These parameters were changed in subsequent runs, but they will be explained later on.
 
 Other parameters used for the first run were the `relu` activation function and the `adam` optimizer. Adam (the name Adam is derived from adaptive moment estimation) is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data.
 
@@ -72,7 +72,7 @@ The `binary crossentropy` was used as the loss function. Binary crossentropy is 
 
 ### * Were you able to achieve the target model performance?
 
-In the instructions for this cahllenge it is stated that "The accuracy for the solution is designed to be lower than 75%", so the objective of the exercise is to optimize the Tensorflow model in order to achieve a target predictive accuracy higher than 75%.
+In the instructions for this cahllenge it is stated that "The accuracy for the solution is designed to be lower than 75 %", so the objective of the exercise is to optimize the Tensorflow model in order to achieve a target predictive accuracy higher than 75 %.
 
 ### Results of the original run
 
@@ -95,7 +95,7 @@ There were four attempts to improve the model's accuracy. The first three attemp
 
 ### Results of the first optimization run - Using TANH as the activation function.
 
-The code for the first optiization run is in the file [AlphabetSoupCharity - Optimized 1.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/58eb42352e132a513f917c22a1cd78f157699aeb/AlphabetSoupCharity%20-%20Optimized%201.ipynb)
+The code for the first optimization run is in the file [AlphabetSoupCharity - Optimized 1.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/58eb42352e132a513f917c22a1cd78f157699aeb/AlphabetSoupCharity%20-%20Optimized%201.ipynb)
 
 #### Settings of the first optimization run.
 
@@ -109,7 +109,7 @@ The code for the first optiization run is in the file [AlphabetSoupCharity - Opt
 
 ### Results of the second optimization run - Using SIGMOID as the activation function.
 
-The code for the second optiization run is in the file [AlphabetSoupCharity - Optimized 2.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/58eb42352e132a513f917c22a1cd78f157699aeb/AlphabetSoupCharity%20-%20Optimized%202.ipynb)
+The code for the second optimization run is in the file [AlphabetSoupCharity - Optimized 2.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/58eb42352e132a513f917c22a1cd78f157699aeb/AlphabetSoupCharity%20-%20Optimized%202.ipynb)
 
 #### Settings of the second optimization run.
 
@@ -123,7 +123,7 @@ The code for the second optiization run is in the file [AlphabetSoupCharity - Op
 
 ### Results of the third optimization run - Using RELU as the activation function.
 
-The code for the third optiization run is in the file [AlphabetSoupCharity - Optimized 3.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/184eefa1d61794874d9c8b56de2dd7afa83d0754/AlphabetSoupCharity%20-%20Optimized%203.ipynb)
+The code for the third optimization run is in the file [AlphabetSoupCharity - Optimized 3.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/184eefa1d61794874d9c8b56de2dd7afa83d0754/AlphabetSoupCharity%20-%20Optimized%203.ipynb)
 
 #### Settings of the third optimization run.
 
@@ -137,7 +137,7 @@ The code for the third optiization run is in the file [AlphabetSoupCharity - Opt
 
 ### Results of the fourth optimization run - Using SIGMOID as the activation function and Adding one extra neuron layer.
 
-The code for the fourth optiization run is in the file [AlphabetSoupCharity - Optimized 4.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/184eefa1d61794874d9c8b56de2dd7afa83d0754/AlphabetSoupCharity%20-%20Optimized%204.ipynb)
+The code for the fourth optimization run is in the file [AlphabetSoupCharity - Optimized 4.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/184eefa1d61794874d9c8b56de2dd7afa83d0754/AlphabetSoupCharity%20-%20Optimized%204.ipynb)
 
 #### Settings of the fourth optimization run.
 
@@ -166,17 +166,17 @@ What is the relationship between the accuracy and the loss in deep learning?: Th
 
 Loss can be defined as the difference between the problem's true values and the values predicted by the model. The greater the loss, the greater the magnitude of the data errors.
 
-The number of errors you made on the data can be used to calculate accuracy.
+The number of errors made on the data can be used to calculate accuracy.
 
 That means:
 
-* A low accuracy and large loss indicates that you made numerous errors on a large amount of data.
+* A low accuracy and large loss indicates that there are numerous errors on a large amount of data.
 
-* A low accuracy but low loss indicates that you made minor mistakes on a large amount of data.
+* A low accuracy but low loss indicates that there are minor mistakes on a large amount of data.
 
-* A high accuracy with low loss indicates that you made few errors on a small set of data (best case scenario).
+* A high accuracy with low loss indicates few errors on a small set of data (best case scenario).
 
-The results above show that it was not possible to exceed the level of 75 percent accuracy, even with the original run's settings. The loss results in the five cases presented are dismal. In each case, the loss function is greater than 50%. The REL function performed the worst in this regard, with a loss value of 70.64 percent.
+The results above show that it was not possible to exceed the level of 75 percent accuracy, even with the original run's settings. The loss results in the five cases presented are dismal. In each case, the loss function is greater than 50%. The RELU function performed the worst in this regard, with a loss value of 70.64 percent.
 
 In terms of accuracy, the difference between runs was marginal. The difference between the lowest and highest accuracy is only 0.11 percent `(72.58 % - 72.47 % = 0.11 %)`, indicating that the model was not improved by the changes made.
 
@@ -185,8 +185,9 @@ So, how could the model be improved?
 There is no simple answer to this question, but here are some ideas to get started:
 
 - Considering gathering more data.
-- Testing additional activation functions like Leaky RELU, Parametric RELU, ELU, Softmax, Swish, GELU, SELU.
+- Testing additional activation functions like Leaky RELU, Parametric RELU, ELU, Softmax, Swish, GELU or SELU.
 - Testing additional loss functions for binary classification like Hinge Loss or Squared Hinge Loss.
+- Testing additional optimizer functions like Adadelta, Adagrad, RMSprop, SGD with Momentum or SGD.
 - Increasing the number of hidden layers.
 - Increasing the number of neurons per layer.
 
@@ -212,4 +213,4 @@ V7 Labs: Activation Functions in Neural Networks [12 Types & Use Cases], https:/
 
 Machine Learning Mastery: How to Choose Loss Functions When Training Deep Learning Neural Networks, https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/
 
-
+Analytics Vidhya: A Comprehensive Guide on Deep Learning Optimizers, https://www.analyticsvidhya.com/blog/2021/10/a-comprehensive-guide-on-deep-learning-optimizers/#:~:text=An%20optimizer%20is%20a%20function,loss%20and%20improve%20the%20accuracy.
