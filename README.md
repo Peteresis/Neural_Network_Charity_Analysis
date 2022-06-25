@@ -36,9 +36,9 @@ The columns of the data set are:
  <img src="https://user-images.githubusercontent.com/98360572/175748463-2d59b516-a27a-43fe-afdb-692898415a6d.png" width="50%" height="50%">
 </p>
 
-Target, T, is the correct or desired value for the respose associate to one input, X. Usually, this value will be compared with the output (the response of the neural network), Y to guide the learning process involving the weight changes. The difference between he desired result (the target, T) and the actual output, Y, is the error.  The objective of training the neural network is to minimize the error.
+Target, T, is the correct or desired value for the response associated to one input, X. This value will be compared with the output (the response from the neural network), Y to guide the learning process involving the weight changes. The difference between the desired result (the target, T) and the actual output, Y, is the error.  The objective of training the neural network is to minimize the error.
 
-In our case, the objective is that the Neural Network be able to predict if an organization is going to be successful or not, using the funds received so the `IS_SUCCESSFUL` column contains the target variable. Target variables are also known as dependent variable and we are using this variable to train our model.
+In our case, the objective is that the Neural Network be able to predict if an organization is going to be successful or not, using the funds received, so the `IS_SUCCESSFUL` column contains the target variable. Target variables are also known as dependent variable and we are using this variable to train our model.
 
 * **What variable(s) are considered to be the features for your model?**
 
@@ -49,7 +49,7 @@ Input values are defined as features for the model and are also referred to as i
 
 The columns `EIN` and `NAME` do not contain data that gives additional information to the model.  They would just add noise to the problem and were therefore removed from the dataset using the `drop` function from Pandas.
 
-In the same way, variables with too many unique values whould be removed.  In our example, the column `ASK_AMT` has `8747` unique values, so this variable should also be eliminated, or at least "binned" in order to reduced the number of variables that the model will have to deal with.
+In the same way, variables with too many unique values would be removed.  In our example, the column `ASK_AMT` has `8747` unique values, so this variable should also be eliminated, or at least "binned" in order to reduced the number of variables that the model will have to deal with.
 
 But, what is Binning?
 
@@ -59,6 +59,13 @@ Binning is a technique that accomplishes exactly what it sounds like. It will ta
 ## Compiling, Training, and Evaluating the Model
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+A good rule of thumb for a basic neural network is to have two to three times the amount of neurons in the hidden layer as the number of inputs.  In the first run of the model had two hidden layers, the first layer had `80` neurons and the second layer had `30` neurons.  These parameters were changed in subsequent runs, but they will be explained later on.
+
+Other parameters used for the first run were the `relu` activation function and the `adam` optimizer. Adam (the name Adam is derived from adaptive moment estimation) is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data.
+
+The `binary crossentropy` was used as the loss function
+
 
 * Were you able to achieve the target model performance?
 
@@ -185,13 +192,13 @@ Results Attempt #4
 ![image](https://user-images.githubusercontent.com/98360572/175424286-9b9110f8-b31a-489e-b54d-d0e8e3defe68.png)
 
 ---
-# :three: References.
+# :four: References.
 
 The Rise of Machine Learning, https://courses.bootcampspot.com/courses/1145/pages/19-dot-0-1-the-rise-of-machine-learning
 
 Towards Data Science: Binning for Feature Engineering in Machine Learning, https://towardsdatascience.com/binning-for-feature-engineering-in-machine-learning-d3b3d76f364a
 
-
+Machine Leraning Mastery: Gentle Introduction to the Adam Optimization Algorithm for Deep Learning, https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/
 
 
 
