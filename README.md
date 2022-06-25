@@ -91,6 +91,8 @@ The code for the original run is in the file [AlphabetSoupCharity.ipynb](https:/
 
 There were four attempts to improve the model's accuracy. The first three attempts involved changing the activation function, and the fourth attempt involved changing the number of hiden layers and neurons.
 
+---
+
 ### Results of the first optimization run - Using TANH as the activation function.
 
 The code for the first optiization run is in the file [AlphabetSoupCharity - Optimized 1.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/58eb42352e132a513f917c22a1cd78f157699aeb/AlphabetSoupCharity%20-%20Optimized%201.ipynb)
@@ -103,6 +105,7 @@ The code for the first optiization run is in the file [AlphabetSoupCharity - Opt
 
 ![image](https://user-images.githubusercontent.com/98360572/175400796-a1eba6df-f982-4650-b3a7-4514d31b969d.png)
 
+---
 
 ### Results of the second optimization run - Using SIGMOID as the activation function.
 
@@ -116,6 +119,33 @@ The code for the second optiization run is in the file [AlphabetSoupCharity - Op
 
 ![image](https://user-images.githubusercontent.com/98360572/175407635-44b918dd-d730-443a-8bfe-0e8be276fa91.png)
 
+---
+
+### Results of the third optimization run - Using RELU as the activation function.
+
+The code for the third optiization run is in the file [AlphabetSoupCharity - Optimized 3.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/184eefa1d61794874d9c8b56de2dd7afa83d0754/AlphabetSoupCharity%20-%20Optimized%203.ipynb)
+
+#### Settings of the third optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175421073-c4babfed-4bbe-493d-906d-13bedabc77ad.png)
+
+#### Results of the third optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175419659-14f26835-9ba3-4bcb-a3df-4dba13e54e75.png)
+
+---
+
+### Results of the fourth optimization run - Using SIGMOID as the activation function and Adding one extra neuron layer.
+
+The code for the fourth optiization run is in the file [AlphabetSoupCharity - Optimized 4.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/184eefa1d61794874d9c8b56de2dd7afa83d0754/AlphabetSoupCharity%20-%20Optimized%204.ipynb)
+
+#### Settings of the fourth optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175424350-6a8a93b7-790a-4f21-8406-1810fdd1739e.png)
+
+#### Results of the fourth optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175424286-9b9110f8-b31a-489e-b54d-d0e8e3defe68.png)
 
 
 
@@ -159,28 +189,10 @@ The code for the second optiization run is in the file [AlphabetSoupCharity - Op
 
 
 
-Using Relu
-
-Settings Attempt #3
-
-![image](https://user-images.githubusercontent.com/98360572/175421073-c4babfed-4bbe-493d-906d-13bedabc77ad.png)
 
 
-Results Attempt #3
-
-![image](https://user-images.githubusercontent.com/98360572/175419659-14f26835-9ba3-4bcb-a3df-4dba13e54e75.png)
 
 
-Using SIGMOID and Adding one extra neuron layer
-
-Settings Attempt #4
-
-![image](https://user-images.githubusercontent.com/98360572/175424350-6a8a93b7-790a-4f21-8406-1810fdd1739e.png)
-
-
-Results Attempt #4
-
-![image](https://user-images.githubusercontent.com/98360572/175424286-9b9110f8-b31a-489e-b54d-d0e8e3defe68.png)
 
 ---
 # :four: References.
