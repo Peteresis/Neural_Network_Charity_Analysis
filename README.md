@@ -152,41 +152,16 @@ The code for the fourth optiization run is in the file [AlphabetSoupCharity - Op
 ---
 # :three: Summary
 
+The following table shows a summary of the results obtained 
 
 
-
-
-|   ⚠️ **NOTE: Please click on any image to zoom**     |
-| ----------- |
-
-
-
-
-|   #    | Type of Algorithm      | Name of Algorithm |
+| Run #    | Modification made      | Loss and Accurary Obtained |
 | ----------- | -----------   | -----------  |
-|   1    | Oversampling Algorithm | Naive Random Oversampling |
-|   2    | Oversampling Algorithm | SMOTE Oversampling |
-|   3    | Undersampling Algorithm | Cluster Centroid |
-|   4    | Combination (Over and Under) Sampling Algorithm | SMOTEENN |
-|   5    | Ensemble Learner | Balanced Random Forest Classifier |
-|   6    | Ensemble Learner | Easy Ensemble AdaBoost Classifier |
-
-
-
-```
-🔽 Naive Random Oversampling 🔽
-```
-
-<p align="left">
-<div class="row">
-  <div class="column">
-    <img src="https://user-images.githubusercontent.com/98360572/173164118-81231084-fd26-4ddf-85cf-c24ffd6267c0.png" width="40%" height="40%">
-    <img src="https://user-images.githubusercontent.com/98360572/173163893-3ddda1c9-ed17-4687-a31a-7903f8e0b9b2.png" width="40%" height="40%">
-  </div>
-</div>
-</p>
-
-
+|   0    | Original Run Algorithm | Loss: 0.5711 Accuracy: 0.7254 |
+|   1    | Using TANH activation function | Loss: 0.5668 Accuracy: 0.7249 |
+|   2    | Using SIGMOID activation function | Loss: 0.5648 Accuracy: 0.7255 |
+|   3    | Using RELU activation function | Loss: 0.7064 Accuracy: 0.7247 |
+|   4    | Using SIGMOID activation function and<br> + 1 Extra Layer | Loss: 0.5885 Accuracy: 0.7258 |
 
 
 
@@ -205,4 +180,4 @@ Machine Leraning Mastery: Gentle Introduction to the Adam Optimization Algorithm
 
 Peltarion: Binary crossentropy, https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
 
-
+Machine Learning Mastery: Loss and Loss Functions for Training Deep Learning Neural Networks, https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/
