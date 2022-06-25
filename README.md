@@ -58,18 +58,64 @@ Binning is a technique that accomplishes exactly what it sounds like. It will ta
 
 ## Compiling, Training, and Evaluating the Model
 
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
+### * How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 A good rule of thumb for a basic neural network is to have two to three times the amount of neurons in the hidden layer as the number of inputs.  In the first run of the model had two hidden layers, the first layer had `80` neurons and the second layer had `30` neurons.  These parameters were changed in subsequent runs, but they will be explained later on.
 
 Other parameters used for the first run were the `relu` activation function and the `adam` optimizer. Adam (the name Adam is derived from adaptive moment estimation) is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data.
 
-The `binary crossentropy` was used as the loss function
+The `binary crossentropy` was used as the loss function. Binary crossentropy is a loss function that is used in binary classification tasks. These are tasks that answer a question with only two choices (yes or no, A or B, 0 or 1, left or right). Several independent such questions can be answered at the same time
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/98360572/175785310-b4334dea-b42a-4eb4-a628-406b32a6cfa2.png" width="75%" height="75%">
+</p>
+
+### * Were you able to achieve the target model performance?
+
+In the instructions for this cahllenge it is stated that "The accuracy for the solution is designed to be lower than 75%", so the objective of the exercise is to optimize the Tensorflow model in order to achieve a target predictive accuracy higher than 75%.
+
+### Results of the original run
+
+The code for the original run is in the file [AlphabetSoupCharity.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/b4fa8fa35662c2f8b255318495f58ae7ea0d0048/AlphabetSoupCharity.ipynb)
+
+#### Settings Original Analysis 
+
+![image](https://user-images.githubusercontent.com/98360572/175398665-fadca32c-33b1-4e88-9597-ce42fd237d8c.png)
+
+#### Results original Analysis
+
+![image](https://user-images.githubusercontent.com/98360572/175398768-7dcd341c-48d6-4ef0-af9d-17effa1e2b80.png)
 
 
-* Were you able to achieve the target model performance?
+### * What steps did you take to try and increase model performance?
 
-* What steps did you take to try and increase model performance?
+There were four attempts to improve the model's accuracy. The first three attempts involved changing the activation function, and the fourth attempt involved changing the number of hiden layers and neurons.
+
+### Results of the first optimization run - Using TANH as the activation function.
+
+The code for the first optiization run is in the file [AlphabetSoupCharity - Optimized 1.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/58eb42352e132a513f917c22a1cd78f157699aeb/AlphabetSoupCharity%20-%20Optimized%201.ipynb)
+
+#### Settings of the first optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175400603-64fa0b52-59a2-4b07-ac34-b2019b86addb.png)
+
+#### Results of the first optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175400796-a1eba6df-f982-4650-b3a7-4514d31b969d.png)
+
+
+### Results of the second optimization run - Using SIGMOID as the activation function.
+
+The code for the second optiization run is in the file [AlphabetSoupCharity - Optimized 2.ipynb](https://github.com/Peteresis/Neural_Network_Charity_Analysis/blob/58eb42352e132a513f917c22a1cd78f157699aeb/AlphabetSoupCharity%20-%20Optimized%202.ipynb)
+
+#### Settings of the second optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175407557-a5d13c42-ca87-431d-a12b-fc2482d94f33.png)
+
+#### Results of the second optimization run.
+
+![image](https://user-images.githubusercontent.com/98360572/175407635-44b918dd-d730-443a-8bfe-0e8be276fa91.png)
+
 
 
 
@@ -113,61 +159,6 @@ The `binary crossentropy` was used as the loss function
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Neural_Network_Charity_Analysis
- With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
- 
- 
- 
-Settings Original Analysis 
-
-![image](https://user-images.githubusercontent.com/98360572/175398665-fadca32c-33b1-4e88-9597-ce42fd237d8c.png)
-
-Results original Analysis
-
-![image](https://user-images.githubusercontent.com/98360572/175398768-7dcd341c-48d6-4ef0-af9d-17effa1e2b80.png)
-
-
-Using TANH
-
-Settings Attempt #1
-
-![image](https://user-images.githubusercontent.com/98360572/175400603-64fa0b52-59a2-4b07-ac34-b2019b86addb.png)
-
-Results Attempt #1
-
-![image](https://user-images.githubusercontent.com/98360572/175400796-a1eba6df-f982-4650-b3a7-4514d31b969d.png)
-
-
-
-Using SIGMOID
-
-Settings Attempt #2
-
-![image](https://user-images.githubusercontent.com/98360572/175407557-a5d13c42-ca87-431d-a12b-fc2482d94f33.png)
-
-Results Attempt #2
-
-![image](https://user-images.githubusercontent.com/98360572/175407635-44b918dd-d730-443a-8bfe-0e8be276fa91.png)
-
-
-
 Using Relu
 
 Settings Attempt #3
@@ -200,6 +191,6 @@ Towards Data Science: Binning for Feature Engineering in Machine Learning, https
 
 Machine Leraning Mastery: Gentle Introduction to the Adam Optimization Algorithm for Deep Learning, https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/
 
-
+Peltarion: Binary crossentropy, https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
 
 
