@@ -147,8 +147,6 @@ The code for the fourth optiization run is in the file [AlphabetSoupCharity - Op
 
 ![image](https://user-images.githubusercontent.com/98360572/175424286-9b9110f8-b31a-489e-b54d-d0e8e3defe68.png)
 
-
-
 ---
 # :three: Summary
 
@@ -164,10 +162,33 @@ The following table shows a summary of the results obtained
 |   4    | Using SIGMOID activation function and<br> + 1 Extra Layer | Loss: 0.5885 Accuracy: 0.7258 |
 
 
+What is the relationship between the accuracy and the loss in deep learning?: There is no relationship between these two metrics.
 
+Loss can be defined as the difference between the problem's true values and the values predicted by the model. The greater the loss, the greater the magnitude of the data errors.
 
+The number of errors you made on the data can be used to calculate accuracy.
 
+That means:
 
+* A low accuracy and large loss indicates that you made numerous errors on a large amount of data.
+
+* A low accuracy but low loss indicates that you made minor mistakes on a large amount of data.
+
+* A high accuracy with low loss indicates that you made few errors on a small set of data (best case scenario).
+
+The results above show that it was not possible to exceed the level of 75 percent accuracy, even with the original run's settings. The loss results in the five cases presented are dismal. In each case, the loss function is greater than 50%. The REL function performed the worst in this regard, with a loss value of 70.64 percent.
+
+In terms of accuracy, the difference between runs was marginal. The difference between the lowest and highest accuracy is only 0.11 percent `(72.58 % - 72.47 % = 0.11 %)`, indicating that the model was not improved by the changes made.
+
+So, how could the model be improved?
+
+There is no simple answer to this question, but here are some ideas to get started:
+
+- Considering gathering more data.
+- Testing additional activation functions like Leaky RELU, Parametric RELU, ELU, Softmax, Swish, GELU, SELU.
+- Testing additional loss functions for binary classification like Hinge Loss or Squared Hinge Loss.
+- Increasing the number of hidden layers.
+- Increasing the number of neurons per layer.
 
 ---
 # :four: References.
@@ -181,3 +202,14 @@ Machine Leraning Mastery: Gentle Introduction to the Adam Optimization Algorithm
 Peltarion: Binary crossentropy, https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
 
 Machine Learning Mastery: Loss and Loss Functions for Training Deep Learning Neural Networks, https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/
+
+
+Data Science Stack Exchange: What is the relationship between the accuracy and the loss in deep learning?, https://datascience.stackexchange.com/questions/42599/what-is-the-relationship-between-the-accuracy-and-the-loss-in-deep-learning
+
+Towards Data Science: Activation Functions in Neural Networks, https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
+
+V7 Labs: Activation Functions in Neural Networks [12 Types & Use Cases], https://www.v7labs.com/blog/neural-networks-activation-functions
+
+Machine Learning Mastery: How to Choose Loss Functions When Training Deep Learning Neural Networks, https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/
+
+
