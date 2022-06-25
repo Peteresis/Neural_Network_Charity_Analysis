@@ -29,12 +29,39 @@ The columns of the data set are:
 * `IS_SUCCESSFUL` — Was the money used effectively
 
 ## Data Preprocessing
-* What variable(s) are considered the target(s) for your model?
-* What variable(s) are considered to be the features for your model?
-* What variable(s) are neither targets nor features, and should be removed from the input data?
+
+* **What variable(s) are considered the target(s) for your model?**
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/98360572/175748463-2d59b516-a27a-43fe-afdb-692898415a6d.png" width="50%" height="50%">
+</p>
+
+Target, T, is the correct or desired value for the respose associate to one input, X. Usually, this value will be compared with the output (the response of the neural network), Y to guide the learning process involving the weight changes. The difference between he desired result (the target, T) and the actual output, Y, is the error.  The objective of training the neural network is to minimize the error.
+
+In our case, the objective is that the Neural Network be able to predict if an organization is going to be successful or not, using the funds received so the `IS_SUCCESSFUL` column contains the target variable. Target variables are also known as dependent variable and we are using this variable to train our model.
+
+* **What variable(s) are considered to be the features for your model?**
+
+Input values are defined as features for the model and are also referred to as independent variables. All the columns in the CSV except the target variable `IS_SUCCESSFUL` and the ones we dropped — `EIN` and `NAME` are included in those variables.
+
+
+* **What variable(s) are neither targets nor features, and should be removed from the input data?**
+
+The columns `EIN` and `NAME` do not contain data that gives additional information to the model.  They would just add noise to the problem and were therefore removed from the dataset using the `drop` function from Pandas.
+
+In the same way, variables with too many unique values whould be removed.  In our example, the column `ASK_AMT` has `8747` unique values, so this variable should also be eliminated, or at least "binned" in order to reduced the number of variables that the model will have to deal with.
+
+But, what is Binning?
+
+Binning is a technique that accomplishes exactly what it sounds like. It will take a column with continuous numbers and place the numbers in “bins” or categories based on ranges that we determine. This will give us a new categorical variable feature.
+
+
 ## Compiling, Training, and Evaluating the Model
+
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
 * Were you able to achieve the target model performance?
+
 * What steps did you take to try and increase model performance?
 
 
@@ -160,15 +187,11 @@ Results Attempt #4
 ---
 # :three: References.
 
-Using Unsupervised Learning to Discover Unknown Patterns, https://courses.bootcampspot.com/courses/1145/pages/18-dot-0-1-using-unsupervised-learning-to-discover-unknown-patterns
+The Rise of Machine Learning, https://courses.bootcampspot.com/courses/1145/pages/19-dot-0-1-the-rise-of-machine-learning
 
-Copy Paste Guru: How to fix "ModuleNotFoundError: No module named 'hvplot'", https://copypaste.guru/WhereIsMyPythonModule/how-to-fix-modulenotfounderror-no-module-named-hvplot
+Towards Data Science: Binning for Feature Engineering in Machine Learning, https://towardsdatascience.com/binning-for-feature-engineering-in-machine-learning-d3b3d76f364a
 
-Towards Data Science: Get Started: 3 Ways to Load CSV files into Colab, https://towardsdatascience.com/3-ways-to-load-csv-files-into-colab-7c14fcbdcb92
 
-Holoviz, Hvplot: Plotting, https://hvplot.holoviz.org/user_guide/Plotting.html
- 
-Github: Colab rendering requires reloading extension in each cell #3551, https://github.com/holoviz/holoviews/issues/3551
 
 
 
